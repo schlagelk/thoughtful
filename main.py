@@ -50,7 +50,7 @@ def thoughtful_agent_claude(user_input, chat_history):
         messages.append({"role": "user", "content": cleaned_input})
 
         response = client.messages.create(
-            model="claude-3-7-sonnet-20250219",
+            model="claude-opus-4-1-20250805",
             max_tokens=512,
             system=SYSTEM_PROMPT,
             messages=messages
